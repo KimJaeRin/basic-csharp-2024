@@ -165,7 +165,7 @@ int[] arr = { 1, 2, 3, 4, 5 };
     - 클래스는 상속 시 별다른 문제없음 vs 인터페이스는 구현을 하면 약속을 지키지 않으면 오류표시
     - 인터페이스에서 약속한 매서드를 구현 안하면 안됨
     - 추상 클래스를 단순화 시키면 인터페이스
-    ![인터페이스설명](https://raw.githubusercontent.com/KimJaeRin/basic-csharp-2024/f6af4e507b4a74ff442094e698646f3ac6102431/images/cs001.png)
+    ![인터페이스설명](https://github.com/KimJaeRin/basic-csharp-2024/blob/main/images/cs001.png)
 - 추상클래스(abstract)
     - virtual 매서드하고 유사
     - 추상클래스를 단순화 시키면 인터페이스
