@@ -230,8 +230,8 @@ int[] arr = { 1, 2, 3, 4, 5 };
 
 - TIP: C# 주석 중 영역을 지정할 수 있는 주석(접을 수 있음)
     - #region ~ #endregion 사용시 영역을  Expand 또는 Collapse 가능
-    
-    ![region주석](https://raw.githubusercontent.com/KimJaeRin/basic-csharp-2024/f6af4e507b4a74ff442094e698646f3ac6102431/images/cs002.png)
+
+    ![region주석]https://github.com/KimJaeRin/basic-csharp-2024/blob/main/images/cs002.png)
 
 ## 3일차
 - 람다식
