@@ -16,7 +16,7 @@
     - OS 독립적인 새로운 틀을 제작하기 시작(2022년 ~) -> .NET 5.0, 현재 .NET 8.0
     - 2024년 현재 .NET 8.0
     - C/C++은 gcc 컴파일러, Java는 JDK, C#은 .NET 5.0이상이 필요
-    - 이제는 신규개발 시, ** .NET Framework는 사용하지 말것 **
+    - 이제는 신규개발 시, **.NET Framework는 사용하지 말것**
 
 - Hello, C#!
     - Visual Studio 시작
@@ -61,6 +61,7 @@
 - 흐름제어
     - C++과 동일!
     - if, switch, while, do - while, for, break, continue, goto 모두 동일
+    - ** C#에는 foreach가 존재 ** :파이썬의 for item in[]과 동일
 
 ```cs
 int[] arr = { 1, 2, 3, 4, 5 };
@@ -74,7 +75,7 @@ int[] arr = { 1, 2, 3, 4, 5 };
 
  - 메서드(Method)
     - 함수와 동일. 구조적 프로그래밍에서 함수면, 객체지향에서는 매서드로 부른다(파이썬만 예외)
-    - 매개변수 참조형식 -> C++ 에서 Pointer로 값을 사용할 때와 동일한 기능
+    - **매개변수 참조형식** -> C++ 에서 Pointer로 값을 사용할 때와 동일한 기능
     ```cs
      public static void RefSwap(ref int a, ref int b)
     {
@@ -87,7 +88,7 @@ int[] arr = { 1, 2, 3, 4, 5 };
     RefSwap(ref a, ref b);
     ```
 
-    - 매개변수 출력형식 -> 매개변수를 리턴값으로 사용하도록 대체해주는 방법(과도기적인 방법)
+    - 매개변수 출력형식 -> 매개변수를 리턴값으로 사용하도록 대체해주는 방법(과도기적인 방법), 키워드 out
 
     ```cs
      public static void Divide(int a, int b, out int quotient, out int remainder)
@@ -153,7 +154,7 @@ int[] arr = { 1, 2, 3, 4, 5 };
     - 한꺼번에 여러개의 데이터를 리턴하거나 전달할때 유용
     - 값 할당 후 변경불가
 
-- 인터페이스
+- **인터페이스**
     - 클래스 : 객체의 청사진/ 인터페이스 : 클래스의 청사진
     - 인터페이스는 클래스가 어떠한 매서드를 가져야 하는지를 약속하는 것
     - 다중상속의 문제를 단일상속으로도 해결하게 만든 주체
@@ -169,12 +170,12 @@ int[] arr = { 1, 2, 3, 4, 5 };
     - virtual 매서드하고 유사
     - 추상클래스를 단순화 시키면 인터페이스
 
-- 프로퍼티
+- **프로퍼티**
     - 클래스 맴버변수의 변형, 일반 변수와 유사
     - 멤버변수의 접근제한자를 public으로 했을때의 객체지향적 문제점(코드오염 등)을 해결하기 위해서
     - GET / SET 접근자
     - SET은 값 할당시에 장못된 데이터가 들어가지 않도록 막아야함
-    - Java에선 Gerrer메서드 / Setter 메서드로 사용
+    - Java에선 getter메서드 / setter 메서드로 사용
 
 
 ## 2일차
@@ -199,8 +200,46 @@ int[] arr = { 1, 2, 3, 4, 5 };
     - 파이썬 : 변수에 제약사항이 없음.
     - C#, Java : 변수에 제약사항이 있음.
     - 타입의 제약을 해소하고자 만든 기능, ArrayList 등이 해결(단, 박싱(언박싱)등 성능 문제가 있음) (ctrl + K + C 한번에 주석처리)
-    - 하나의 메서드로 여러타입의 처리를 해줄 수 있는 프로그래밍 방식
+    - **하나의 메서드로 여러타입의 처리를 해줄 수 있는 프로그래밍 방식**
     - 일반화 컬렉션
         - List<T>
         - Stack<T>, queue<T>
         - Dictionary<TKey, TValue>
+
+- 예외처리
+    - 소스코드 상 문법적 오류 : 오류(Error)
+    - 실행 중 생기는 오류 : 예외(Exception)
+
+    ```cs
+    try{
+        //.. 예외가 발생할 것 같은 소스코드
+    } catch(Exception ex){
+        /* 모든 예외클래스의 조상은 Exception(예 IndexOutOfRangeException)
+            어떤 예외클래스를 쓸지 모름녀 무조건 Exception 클래스 사용하면 됨 */
+        console.WriteLine(ex.message);
+    } Finally{
+        // 예외발생 유무에 상관없이 항상 실행
+    }
+    ```
+- 대리자와 이벤트
+    - 메서드 호출 시 매개변수 전달
+    - 대리자 호출 시 함수(메서드) 자체를 전달   
+    - 이벤트 : 컴퓨터 내에서 발생하는 객체의 사건들
+    - delegate --> event로 변경
+    - 윈폼개발 --> 이벤트 기반(Event driven) 프로그래밍
+
+- TIP: C# 주석 중 영역을 지정할 수 있는 주석(접을 수 있음)
+    - #region ~ #endregion 사용시 영역을  Expand 또는 Collapse 가능
+    ![region주석](https://raw.githubusercontent.com/KimJaeRin/basic-csharp-2024/f6af4e507b4a74ff442094e698646f3ac6102431/images/cs002.png)
+
+## 3일차
+- 람다식
+- LINQ
+- 에트리뷰트
+- 파이썬 실행
+- Winforms UI 개발 + 파일, 스레드
+- 가비지 컬렉션
+
+## 4일차
+- WPF
+- 예제 프로젝트
