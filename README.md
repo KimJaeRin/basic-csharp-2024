@@ -285,14 +285,26 @@ int[] arr = { 1, 2, 3, 4, 5 };
         - TreeView : Trv-
         - ListView : Lsv-
         - PictureBox : Pic-
-        - *Dialog : Dlg-
+        - Dialog : Dlg-
 
 
 ## 5일차
 - 윈폼 UI 개발(계속)
     - 스레드 추가
+        - 프로세스를 나누어서 동시에 여러가지 일 진행
+        - 스레드 사용하기 불편함
+        - C# BackgroundWorker 클래스를 추가(Thread를 사용하기 편하게 만든 클래스)
+
     - 파일 입출력 추가
+        - 리치텍스트박스(like MSWord, 한글워드)로 파일저장
+
+        <img src="https://github.com/KimJaeRin/basic-csharp-2024/blob/main/images/cs003.png" width = "850">
+
     - 비동기 작업 앱
+        - 가장 트렌드가 되는 작업방법
+        - 백그라운드 처리는 Thread, Background
+        ![비동기앱](https://github.com/KimJaeRin/basic-csharp-2024/blob/main/images/cs004.png)
+
     - 윈도우 탐색기 앱
     - 도서관리 앱 Witn SQL Server
     - Modern UI 앱
