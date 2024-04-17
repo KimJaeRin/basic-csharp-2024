@@ -303,6 +303,7 @@ int[] arr = { 1, 2, 3, 4, 5 };
     - 비동기 작업 앱
         - 가장 트렌드가 되는 작업방법
         - 백그라운드 처리는 Thread, Background
+        
         ![비동기앱](https://github.com/KimJaeRin/basic-csharp-2024/blob/main/images/cs004.png)
 
     - 윈도우 탐색기 앱
