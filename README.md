@@ -321,6 +321,11 @@ int[] arr = { 1, 2, 3, 4, 5 };
 - 토이 프로젝트
     - 윈도우 탐색기 앱 종료
         - 실행결과
+          
+
+https://github.com/KimJaeRin/basic-csharp-2024/assets/158007433/1a11ad0f-34b2-417c-8f2a-6cd6d14bf3c0
+
+
     - 도서관리 앱 Witn SQL Server(Base) ModernUI(NuGet 패키지)
 
 ## 8일차
