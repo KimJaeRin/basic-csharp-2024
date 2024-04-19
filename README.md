@@ -315,21 +315,18 @@ int[] arr = { 1, 2, 3, 4, 5 };
 
         ![중간결과](https://github.com/KimJaeRin/basic-csharp-2024/blob/main/images/cs005.png)
 
-        - 미적용 - 컨텍스트메뉴 보기 기능, 더블클릭 프로그램 실행, ...
+        - 미적용 - 컨텍스트메뉴 리스트뷰 보기 기능, 더블클릭 프로그램 실행, ...
 
 ## 7일차
 - 토이 프로젝트
     - 윈도우 탐색기 앱 종료
         - 실행결과
-          
-    https://github.com/KimJaeRin/basic-csharp-2024/assets/158007433/cc1e2c87-6fce-471c-8aa2-9923f4c6ae79
+    - 도서관리 앱 Witn SQL Server(Base) ModernUI(NuGet 패키지)
 
-
-
-    - Modern UI 앱(UI 디자인)
-    - 도서관리 앱 Witn SQL Server(Base)
-    - 국가 교통정보센터 CCTV View 앱(OpenAPI, NuGet dll, Network)
+## 8일차
+- 토이 프로젝트
     - IoT Dummy 앱 With SQL Server(Iot, DB)
+    - 국가 교통정보센터 CCTV View 앱(OpenAPI, NuGet dll, Network, UI디자인, 비동기메서드)
 
 ## 개인 토이프로젝트
 - 심플 메모장앱
