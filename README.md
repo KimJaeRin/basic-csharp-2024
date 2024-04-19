@@ -320,6 +320,12 @@ int[] arr = { 1, 2, 3, 4, 5 };
 ## 7일차
 - 토이 프로젝트
     - 윈도우 탐색기 앱 종료
+        - 실행결과
+          
+    https://github.com/KimJaeRin/basic-csharp-2024/assets/158007433/cc1e2c87-6fce-471c-8aa2-9923f4c6ae79
+
+
+
     - Modern UI 앱(UI 디자인)
     - 도서관리 앱 Witn SQL Server(Base)
     - 국가 교통정보센터 CCTV View 앱(OpenAPI, NuGet dll, Network)
