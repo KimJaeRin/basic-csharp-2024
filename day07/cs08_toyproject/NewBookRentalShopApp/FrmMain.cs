@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +13,9 @@ namespace NewBookRentalShopApp
 {
     public partial class FrmMain : MetroForm
     {
+        // 각 화면을 초기화
+        FrmLoginUser frmLoginUser = null; // 객체를 메서드로 생성
+
         public FrmMain()
         {
             InitializeComponent();
@@ -25,6 +28,39 @@ namespace NewBookRentalShopApp
             frm.StartPosition = FormStartPosition.CenterScreen;
             frm.TopMost = true; // 윈도우화면 가장 상단에 오게 함
             frm.ShowDialog();
+        }
+
+        private void MnuLoginUsers_Click(object sender, EventArgs e)
+        {
+            // 이미 창이 열려있으면 새로 생성할 필요가 없기 때문에
+            // 이런 작업을안하면 클릭시마다 새폼이 열림
+            frmLoginUser = ShowActiveForm(frmLoginUser, typeof(FrmLoginUser)) as FrmLoginUser;
+        }
+
+        Form ShowActiveForm(Form form, Type type)
+        {
+            if (form == null) // 화면이 한번도 열리지 않았으면 
+            {
+                form = Activator.CreateInstance(type) as Form; // 클래스 타입
+                form.MdiParent = this; // 자식창의 부모는 FrmMain
+                form.WindowState = FormWindowState.Normal;
+                form.Show();
+            }
+            else
+            {
+                if (form.IsDisposed)  // 창이 한번 닫혔으면
+                {
+                    form = Activator.CreateInstance(type) as Form; // 클래스 타입
+                    form.MdiParent = this; // 자식창의 부모는 FrmMain
+                    form.WindowState = FormWindowState.Normal;
+                    form.Show();
+                }
+                else // 창을 그냥 최소화, 열려있으면
+                {
+                    form.Activate(); // 화면에 열려있는 창을 활성화
+                }
+            }
+            return form;
         }
     }
 }

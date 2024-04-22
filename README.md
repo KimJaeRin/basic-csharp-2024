@@ -337,6 +337,18 @@ https://github.com/KimJaeRin/basic-csharp-2024/assets/158007433/1a11ad0f-34b2-41
 
 ## 8일차
 - 토이 프로젝트
+    - 도서관리 앱 관리화면
+        - 앱사용자관리 완료
+
+## 9일차
+- 토이 프로젝트
+    - 도서관리 앱
+        - 책 장르 관리
+        - 책 정보 관리
+        - 도서회원 관리
+        - 대출관리
+        - 프로그램 소개
+
     - IoT Dummy 앱 With SQL Server(Iot, DB)
     - 국가 교통정보센터 CCTV View 앱(OpenAPI, NuGet dll, Network, UI디자인, 비동기메서드)
 
