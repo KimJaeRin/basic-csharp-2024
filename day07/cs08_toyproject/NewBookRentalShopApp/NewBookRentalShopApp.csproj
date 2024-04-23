@@ -58,6 +58,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmBookInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBookInfo.Designer.cs">
+      <DependentUpon>FrmBookInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBookDivision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBookDivision.Designer.cs">
+      <DependentUpon>FrmBookDivision.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLoginUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,10 +88,17 @@
     <Compile Include="FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="helper\common.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmBookInfo.resx">
+      <DependentUpon>FrmBookInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBookDivision.resx">
+      <DependentUpon>FrmBookDivision.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLoginUser.resx">
       <DependentUpon>FrmLoginUser.cs</DependentUpon>
@@ -97,6 +116,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Imgs\imgs.zip" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -113,7 +133,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="books.ico" />
-    <None Include="KakaoTalk_20240422_110811855.png" />
+    <Content Include="Imgs\book.ico" />
+    <Content Include="Imgs\book.png" />
+    <Content Include="Imgs\division.ico" />
+    <Content Include="Imgs\division.png" />
+    <Content Include="Imgs\login.ico" />
+    <Content Include="Imgs\login.png" />
+    <Content Include="Imgs\member.ico" />
+    <Content Include="Imgs\member.png" />
+    <Content Include="Imgs\rental.ico" />
+    <Content Include="Imgs\rental.png" />
+    <None Include="login.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
