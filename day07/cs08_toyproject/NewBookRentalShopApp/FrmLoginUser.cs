@@ -58,17 +58,26 @@ namespace NewBookRentalShopApp
         private void BtnSave_Click(object sender, EventArgs e)
         {
             var md5Hash = MD5.Create(); // MD5 암호화용 객체 생성
+            var valid = true;
+            var errMsg = "";
             // 입력검증(Validation Check), 순번, 이름, 패스워드를 안넣으면
      
             if (string.IsNullOrEmpty(TxtUserId.Text))
             {
-                MessageBox.Show("사용자아이디를 입력하세요.");
-                return;
+                errMsg += "사용자아이디를 입력하세요.";
+                valid = false;
             }
 
             if (string.IsNullOrEmpty(TxtPassword.Text))
             {
-                MessageBox.Show("패스워드를 입력하세요.");
+                errMsg += "패스워드를 입력하세요.";
+                valid = false;
+
+
+            }
+            if( valid == false)
+            {
+                MetroMessageBox.Show(this.Parent.Parent, errMsg, "입력오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             try
@@ -114,7 +123,7 @@ namespace NewBookRentalShopApp
                     if (result > 0)
                     {
                         // this 메시지 박스의 부모창이 누구냐, FrmLoginUser
-                        MetroMessageBox.Show(this, "저장성공", "저장", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MetroMessageBox.Show(this.Parent.Parent, "저장성공", "저장", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         //MessageBox.Show("저장 성공.", "저장", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
@@ -128,7 +137,7 @@ namespace NewBookRentalShopApp
             catch (Exception ex)
             {
 
-               MetroMessageBox.Show(this, $"오류 : {ex.Message}", "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
+               MetroMessageBox.Show(this.Parent.Parent, $"오류 : {ex.Message}", "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
            
             TxtUseridx.Text = TxtUserId.Text = TxtPassword.Text = string.Empty; // 모든 입력값 삭제
@@ -139,7 +148,7 @@ namespace NewBookRentalShopApp
         {
             if(string.IsNullOrEmpty(TxtUseridx.Text)) // 사용자아이디순번이 없으면
             {
-                MetroMessageBox.Show(this, " 삭제할 사용사를 선택하세요 ","오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MetroMessageBox.Show(this.Parent.Parent, " 삭제할 사용사를 선택하세요 ","오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -161,7 +170,7 @@ namespace NewBookRentalShopApp
                 if (result > 0)
                 {
 
-                    MetroMessageBox.Show(this, "삭제성공", "삭제", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MetroMessageBox.Show(this.Parent.Parent, "삭제성공", "삭제", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {

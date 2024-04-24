@@ -105,7 +105,7 @@ namespace NewBookRentalShopApp
                 {
                     chkUserId = reader["userId"] != null ? reader["userId"].ToString() : "-"; // 유저아이디가 null일때 - 변경
                     chkPassword = reader["password"] != null ? reader["password"].ToString() : "-"; // 패스워드가 null일때 - 변경
-
+                    helper.common.LoginId = chkUserId; // 로그인 아이디 할당
                     return true;
                 }
 

@@ -267,7 +267,7 @@ namespace NewBookRentalShopApp
                 DgvResult.Columns[0].Width = 69;
                 DgvResult.Columns[1].Width = 145;
                 DgvResult.Columns[2].Visible = false; // 구분코드 숨김
-                DgvResult.Columns[4].Width = 195;
+                DgvResult.Columns[4].Width = 230;
                 DgvResult.Columns[5].Width = 75;
                 DgvResult.Columns[7].Width = 64;
 
@@ -294,6 +294,13 @@ namespace NewBookRentalShopApp
                 CboDivision.SelectedValue = selData.Cells[2].Value; // 구분코드로 선택해야함
             }
         }
-        
+        // 숫자만 입력 가능하도록 처리
+        private void TxtIsbn_KeyPress(object sender, KeyPressEventArgs e)
+        {
+           if (!char.IsDigit(e.KeyChar) && (e.KeyChar != '.') && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

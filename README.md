@@ -342,13 +342,24 @@ https://github.com/KimJaeRin/basic-csharp-2024/assets/158007433/1a11ad0f-34b2-41
 
 ## 9일차
 - 토이 프로젝트
+    - 기존 만들어진 폼을 복사해서 변경할 시
+        - ***.cs에 있는 클래스 명, 생성자, *.designer 명
     - 도서관리 앱
+        - 공통 클래스...
         - 책 장르 관리
         - 책 정보 관리
+
+## 10일차
+- 토이 프로젝트
+    - 도서관리 앱
         - 도서회원 관리
         - 대출관리
         - 프로그램 소개
 
+        ![책 대여 프로그램](https://github.com/KimJaeRin/basic-csharp-2024/blob/main/images/cs006.png)
+
+## 나머지(WPF/ 미니 프로젝트)
+- Pending
     - IoT Dummy 앱 With SQL Server(Iot, DB)
     - 국가 교통정보센터 CCTV View 앱(OpenAPI, NuGet dll, Network, UI디자인, 비동기메서드)
 
