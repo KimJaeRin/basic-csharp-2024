@@ -28,48 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmUsingTime));
-            timer1 = new System.Windows.Forms.Timer(components);
+            textBoxUsageTime = new TextBox();
             label1 = new Label();
             SuspendLayout();
             // 
-            // timer1
+            // textBoxUsageTime
             // 
-            timer1.Tick += timer1_Tick;
+            textBoxUsageTime.BackColor = Color.White;
+            textBoxUsageTime.Font = new Font("나눔스퀘어라운드 Bold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            textBoxUsageTime.Location = new Point(60, 61);
+            textBoxUsageTime.Name = "textBoxUsageTime";
+            textBoxUsageTime.Size = new Size(119, 25);
+            textBoxUsageTime.TabIndex = 0;
+            textBoxUsageTime.TextAlign = HorizontalAlignment.Right;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("나눔스퀘어라운드 Bold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 129);
-            label1.Location = new Point(5, 80);
+            label1.Location = new Point(65, 41);
             label1.Name = "label1";
-            label1.Size = new Size(51, 17);
-            label1.TabIndex = 0;
-            label1.Text = "label1";
+            label1.Size = new Size(114, 17);
+            label1.TabIndex = 1;
+            label1.Text = "시스템 구동 시간";
             // 
             // FrmUsingTime
             // 
-            AutoScaleDimensions = new SizeF(4F, 8F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(326, 136);
+            ClientSize = new Size(244, 131);
             Controls.Add(label1);
-            Font = new Font("나눔스퀘어라운드 Bold", 5.24999952F, FontStyle.Bold, GraphicsUnit.Point, 129);
-            Icon = (Icon)resources.GetObject("$this.Icon");
-            Margin = new Padding(2);
+            Controls.Add(textBoxUsageTime);
             Name = "FrmUsingTime";
-            Padding = new Padding(11, 60, 11, 10);
+            Resizable = false;
             SizeGripStyle = SizeGripStyle.Hide;
             Style = MetroFramework.MetroColorStyle.Silver;
-            Text = "사용 시간";
-            Load += FrmUsingTime_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private System.Windows.Forms.Timer timer1;
+        private TextBox textBoxUsageTime;
         private Label label1;
     }
 }

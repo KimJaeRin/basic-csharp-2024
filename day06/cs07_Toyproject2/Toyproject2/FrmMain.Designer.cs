@@ -41,7 +41,6 @@ namespace Toyproject2
             PicShutDown = new PictureBox();
             label1 = new Label();
             pictureBox11 = new PictureBox();
-            pictureBox12 = new PictureBox();
             PicAppInfor = new PictureBox();
             PicMin = new PictureBox();
             PicQuick = new PictureBox();
@@ -56,7 +55,6 @@ namespace Toyproject2
             ((System.ComponentModel.ISupportInitialize)PicTimer).BeginInit();
             ((System.ComponentModel.ISupportInitialize)PicShutDown).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             ((System.ComponentModel.ISupportInitialize)PicAppInfor).BeginInit();
             ((System.ComponentModel.ISupportInitialize)PicMin).BeginInit();
             ((System.ComponentModel.ISupportInitialize)PicQuick).BeginInit();
@@ -181,18 +179,10 @@ namespace Toyproject2
             pictureBox11.TabIndex = 11;
             pictureBox11.TabStop = false;
             // 
-            // pictureBox12
-            // 
-            pictureBox12.Location = new Point(241, 364);
-            pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(46, 44);
-            pictureBox12.TabIndex = 12;
-            pictureBox12.TabStop = false;
-            // 
             // PicAppInfor
             // 
             PicAppInfor.Image = Properties.Resources.infor1;
-            PicAppInfor.Location = new Point(137, 364);
+            PicAppInfor.Location = new Point(139, 364);
             PicAppInfor.Name = "PicAppInfor";
             PicAppInfor.Size = new Size(46, 44);
             PicAppInfor.TabIndex = 13;
@@ -202,7 +192,7 @@ namespace Toyproject2
             // PicMin
             // 
             PicMin.Image = Properties.Resources.mini2;
-            PicMin.Location = new Point(85, 364);
+            PicMin.Location = new Point(87, 364);
             PicMin.Name = "PicMin";
             PicMin.Size = new Size(46, 44);
             PicMin.TabIndex = 14;
@@ -212,7 +202,7 @@ namespace Toyproject2
             // PicQuick
             // 
             PicQuick.Image = Properties.Resources.exit1;
-            PicQuick.Location = new Point(189, 364);
+            PicQuick.Location = new Point(191, 364);
             PicQuick.Name = "PicQuick";
             PicQuick.Size = new Size(46, 44);
             PicQuick.TabIndex = 15;
@@ -228,7 +218,6 @@ namespace Toyproject2
             Controls.Add(PicQuick);
             Controls.Add(PicMin);
             Controls.Add(PicAppInfor);
-            Controls.Add(pictureBox12);
             Controls.Add(pictureBox11);
             Controls.Add(label1);
             Controls.Add(PicShutDown);
@@ -257,7 +246,6 @@ namespace Toyproject2
             ((System.ComponentModel.ISupportInitialize)PicTimer).EndInit();
             ((System.ComponentModel.ISupportInitialize)PicShutDown).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
             ((System.ComponentModel.ISupportInitialize)PicAppInfor).EndInit();
             ((System.ComponentModel.ISupportInitialize)PicMin).EndInit();
             ((System.ComponentModel.ISupportInitialize)PicQuick).EndInit();
@@ -279,7 +267,6 @@ namespace Toyproject2
         private PictureBox PicShutDown;
         private Label label1;
         private PictureBox pictureBox11;
-        private PictureBox pictureBox12;
         private PictureBox PicAppInfor;
         private PictureBox PicMin;
         private PictureBox PicQuick;

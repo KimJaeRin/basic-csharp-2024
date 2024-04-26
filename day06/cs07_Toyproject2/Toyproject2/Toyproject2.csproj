@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Bugsnag" Version="3.1.0" />
     <PackageReference Include="MetroFramework" Version="1.2.0.3" />
     <PackageReference Include="Winform.Metroframework" Version="1.4.0" />
   </ItemGroup>
