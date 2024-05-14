@@ -365,6 +365,7 @@ https://github.com/KimJaeRin/basic-csharp-2024/assets/158007433/1a11ad0f-34b2-41
 
 ## 개인 토이프로젝트
 - 프로세스 관리 앱 (day6 폴더)
+  ![프로세스 관리 앱](https://github.com/KimJaeRin/basic-python-2024/blob/main/images/image_2024051426.mp4)
 
   
 
