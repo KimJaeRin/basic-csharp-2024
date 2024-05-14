@@ -364,13 +364,10 @@ https://github.com/KimJaeRin/basic-csharp-2024/assets/158007433/1a11ad0f-34b2-41
     - 국가 교통정보센터 CCTV View 앱(OpenAPI, NuGet dll, Network, UI디자인, 비동기메서드)
 
 ## 개인 토이프로젝트
-- 프로세스 관리 앱 (day6 폴더)
-  ![프로세스 관리 앱](https://github.com/KimJaeRin/basic-python-2024/blob/main/images/image_2024051426.mp4)
+- 프로세스 관리 앱 (day6 폴더)  
 
-  
-
+https://github.com/KimJaeRin/basic-csharp-2024/assets/158007433/6ab8c9f3-d076-4771-96f0-69ae94e4aa42
 
 
-    
 
 
