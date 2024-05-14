@@ -364,7 +364,10 @@ https://github.com/KimJaeRin/basic-csharp-2024/assets/158007433/1a11ad0f-34b2-41
     - 국가 교통정보센터 CCTV View 앱(OpenAPI, NuGet dll, Network, UI디자인, 비동기메서드)
 
 ## 개인 토이프로젝트
-- 심플 메모장앱
-    - 기능 
-    - 특징
-    - 배운점
+- 프로세스 관리 앱 (day6 폴더)
+
+
+
+    
+
+
